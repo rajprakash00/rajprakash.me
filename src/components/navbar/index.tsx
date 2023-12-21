@@ -74,6 +74,14 @@ const Navbar = () => {
     }
   }, [darkTheme]);
 
+  useEffect(() => {
+    if (showDrawer) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.removeProperty("overflow");
+    }
+  }, [showDrawer]);
+  
   const handleThemeChange = (e: React.MouseEvent) => {
     e.preventDefault();
     setDarkTheme(!darkTheme);
@@ -129,6 +137,7 @@ const Navbar = () => {
           <SideDrawer
             initial="closed"
             animate={showDrawer ? "open" : "closed"}
+            $visible={showDrawer}
             variants={variants}
             transition={{ type: "spring", stiffness: 180, damping: 25 }}
           >

@@ -99,7 +99,7 @@ export const NavLink = styled(motion.li)<INavLink>`
   }
 `;
 
-export const SideDrawer = styled(motion.ul)`
+export const SideDrawer = styled(motion.ul)<{ $visible: boolean }>`
   height: 100vh;
   width: 100vw;
   position: fixed;
@@ -111,6 +111,15 @@ export const SideDrawer = styled(motion.ul)`
   flex-direction: column;
   justify-content: center;
   opacity: 0.2;
+  // fix: certain click events were getting blocked by presence of sidedrawer even if it wasn't in visible state
+  ${({ $visible }) =>
+    $visible
+      ? css`
+          pointer-events: auto;
+        `
+      : css`
+          pointer-events: none;
+        `}
 
   @media only screen and (min-width: 764px) {
     display: none;

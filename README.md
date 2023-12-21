@@ -2,7 +2,7 @@
 
 This is my personal minimalistic portfolio which I'll be updating frequently with blogs,rebuilding stuffs with different stacks 👻 
 ### Tech stack
-- [NextJS](https://nextjs.org/docs) + [React]((https://react.dev/))
+- [NextJS](https://nextjs.org/docs) + [React](https://react.dev/)
 - [Typescript](https://www.typescriptlang.org/docs/)
 - [styled-components](https://styled-components.com/)
 - [mdx](https://mdxjs.com/)

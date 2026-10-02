@@ -19,15 +19,7 @@ export const TIMELINE: TimelineEntry[] = [
     ],
   },
   {
-    period: "Apr 2024 – May 2026",
-    role: "Career break",
-    org: "UPSC Civil Services preparation",
-    points: [
-      "Full-time self-directed study, concluded May 2026; pivoted into AI engineering.",
-    ],
-  },
-  {
-    period: "Aug 2022 – Feb 2024",
+    period: "Aug 2022 – Feb 2026",
     role: "Senior Software Engineer (Fullstack)",
     org: "Geeks Invention",
     points: [
